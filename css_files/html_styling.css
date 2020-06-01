@@ -1,0 +1,31 @@
+/*images for the album*/
+#one {
+    background-image: url("http://www.hdwallpapers.in/walls/b_2_spirit_stealth_bomber-wide.jpg");
+    background-size: contain;
+
+}
+#two {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/B-1B.jpg/1200px-B-1B.jpg");
+    background-size: contain;
+}
+#three {
+    background-image: url("https://th.bing.com/th/id/OIP.-4o452p4hr1KYHZbyhxmxQHaE6?pid=Api&rs=1");
+    background-size: contain;
+}
+#four {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/a/a3/Tupolev_Tu-142_Krivchikov_2007.jpg");
+    background-size: contain;
+}
+/* styling elements for the html page*/
+.navigation{
+    font-family: Roboto;
+    font-size: small;
+}
+.subscribe{
+    background-color: #6b6bee;
+}
+.box-header{
+    border:4px double bisque;
+    text-shadow: 2px 2px 2px rgb(90%,90%,60%);
+
+}

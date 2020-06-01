@@ -1,0 +1,88 @@
+/*orientation and styling for the html page*/
+.container{
+    display:grid;
+    /* width:100%;
+    height:90vh; */
+    grid-template-columns:300px ; 
+    grid-template-rows:300px 470px 300px 200px ;
+    grid-template-areas:
+    "hr"
+    "img"
+    "co"
+    "fr";
+    justify-content: center;
+    border:2px solid wheat;
+}   
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border:2px  red;
+}    
+    #header{
+        grid-area:hr ;
+        background-image: url("https://th.bing.com/th/id/OIP.4sn3h4iLaVCYGAqY-abtWAHaDt?pid=Api&rs=1");
+        background-repeat: no-repeat;
+        background-blend-mode: hard-light;
+        background-size: cover;
+        text-decoration-color: rgb(255, 162, 162);
+        padding-left: 15px;
+        font-size: 35pt;
+        margin: 0px 0px;
+        font-family: Rancho;
+        
+    }
+    #blog{
+        grid-area:co;
+        background-color:wheat;
+        color:black;
+    }
+    #image{
+        grid-area:img;
+        background-color:blanchedalmond;
+        background-image: url("http://lava360.com/wp-content/uploads/2014/01/Classic-Background-Images-For-Wordpress-Blogs-26.jpg");
+        background-size: cover;
+        background-repeat: repeat;
+    }
+    #footer{
+          grid-area:fr;
+          color:white;
+          background-image: url("https://th.bing.com/th/id/OIP.M150sq9WK57n-O-in7LYXwHaEo?pid=Api&rs=1");
+          background-repeat: repeat;
+
+
+    }
+    
+    
+@media(min-width:600px) and (max-width:900px) {
+    .container{
+        display:grid;
+        width: 100%;
+        margin:auto;
+        grid-template-columns:30px repeat(7,1fr); 
+        grid-template-rows:250px 470px 200px ;
+        grid-template-areas: 
+        "hr hr hr hr hr hr hr hr"
+        "img img img img img img co co"
+        " fr fr fr fr fr fr fr fr";
+    }
+}
+@media(min-width:901px) {
+    .container{
+        display:grid;
+        width: 100%;
+        margin:auto;
+        grid-template-columns:30px repeat(7,1fr); 
+        grid-template-rows:250px 470px 200px ;
+        grid-template-areas: 
+        "hr hr hr hr hr hr hr hr"
+        "img img img co co co co co "
+        " fr fr fr fr fr fr fr fr";
+    }
+
+
+
+    
+}
